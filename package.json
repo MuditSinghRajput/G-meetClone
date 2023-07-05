@@ -1,10 +1,13 @@
 {
+  "homepage" : "https://muditsinghrajput.github.io/G-meetClone",
   "name": "socket-project",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "nodemon server.js"
   },
   "keywords": [],
